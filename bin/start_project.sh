@@ -7,6 +7,7 @@ cd $DIR_TESTS/data
 docker compose up -d
 
 cd $GITHUB_WORKSPACE/backend/
+npm cache clean --force
 npm ci
 npm run build
 npm run start:dev &
